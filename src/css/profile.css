@@ -18,6 +18,7 @@ div {
 
   border: solid #4c566a;
   border-radius: 20px;
+  overflow: scroll;
 }
 
 .profile-name {
