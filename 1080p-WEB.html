@@ -7,8 +7,11 @@
   <title>1080p-WEB</title>
   <link rel="stylesheet" type="text/css" href="profile.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
+  <script src="custom-format.js"></script>
+  
 </head>
 <body>
+   
     <div class="profile-name">
       <h1>1080p WEB</h1>
     </div>
@@ -27,18 +30,18 @@
             <th class="table-last-column">Score</th> 
           </tr>
           <tr>
-            <td rowspan="14">1080p</td> 
-            <td>Movies Anywhere</td> 
-            <td>FLUX</td> 
-            <td>Dolby Digital+</td> 
-            <td></td> 
-            <td>Special</td> 
-            <td>IMAX</td> 
+            <td onclick="codeBlockName(this.innerText)" rowspan="14">1080p</td> 
+            <td onclick="codeBlockName(this.innerText)">Movies Anywhere</td> 
+            <td onclick="codeBlockName(this.innerText)">FLUX</td> 
+            <td onclick="codeBlockName(this.innerText)">Dolby Digital+</td> 
+            <td onclick="codeBlockName(this.innerText)"></td> 
+            <td onclick="codeBlockName(this.innerText)">Special</td> 
+            <td onclick="codeBlockName(this.innerText)">IMAX</td> 
             <td class="table-last-column">50</td> 
           </tr>
           <tr>
-            <td>Apple TV+</td> 
-            <td>NTb</td> 
+            <td onclick="codeBlockName(this.innerText)">Amazon Prime</td> 
+            <td onclick="codeBlockName(this.innerText)">NTb</td> 
             <td></td> 
             <td></td> 
             <td></td> 
@@ -46,16 +49,8 @@
             <td rowspan="6" class="table-last-column">40</td> 
           </tr>
           <tr>
-            <td></td> 
-            <td>playWEB</td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-            <td></td> 
-          </tr>
-          <tr>
-            <td></td> 
-            <td>SMURF</td> 
+            <td onclick="codeBlockName(this.innerText)">Apple TV+</td> 
+            <td onclick="codeBlockName(this.innerText)">playWEB</td> 
             <td></td> 
             <td></td> 
             <td></td> 
@@ -63,7 +58,7 @@
           </tr>
           <tr>
             <td></td> 
-            <td>MZABI</td> 
+            <td onclick="codeBlockName(this.innerText)">SMURF</td> 
             <td></td> 
             <td></td> 
             <td></td> 
@@ -71,7 +66,7 @@
           </tr>
           <tr>
             <td></td> 
-            <td>TEPES</td> 
+            <td onclick="codeBlockName(this.innerText)">MZABI</td> 
             <td></td> 
             <td></td> 
             <td></td> 
@@ -79,23 +74,31 @@
           </tr>
           <tr>
             <td></td> 
-            <td>CMRG</td> 
+            <td onclick="codeBlockName(this.innerText)">TEPES</td> 
             <td></td> 
             <td></td> 
             <td></td> 
             <td></td> 
           </tr>
           <tr>
-            <td>Disney+</td> 
             <td></td> 
-            <td>DTS</td> 
+            <td onclick="codeBlockName(this.innerText)">CMRG</td> 
+            <td></td> 
+            <td></td> 
+            <td></td> 
+            <td></td> 
+          </tr>
+          <tr>
+            <td onclick="codeBlockName(this.innerText)">Disney+</td> 
+            <td></td> 
+            <td onclick="codeBlockName(this.innerText)">DTS</td> 
             <td></td> 
             <td></td> 
             <td></td> 
             <td rowspan="3" class="table-last-column">30</td> 
           </tr>
           <tr>
-            <td>Netflix</td> 
+            <td onclick="codeBlockName(this.innerText)">Netflix</td> 
             <td></td> 
             <td></td> 
             <td></td> 
@@ -103,7 +106,7 @@
             <td></td> 
           </tr>
           <tr>
-            <td>HBO Max</td> 
+            <td onclick="codeBlockName(this.innerText)">HBO Max</td> 
             <td></td> 
             <td></td> 
             <td></td> 
@@ -111,16 +114,16 @@
             <td></td> 
           </tr>
           <tr>
-            <td>Hulu+</td> 
+            <td onclick="codeBlockName(this.innerText)">Hulu+</td> 
             <td></td> 
-            <td>Dolby Digital</td> 
+            <td onclick="codeBlockName(this.innerText)">Dolby Digital</td> 
             <td></td> 
             <td></td> 
             <td></td> 
             <td rowspan="3" class="table-last-column">20</td> 
           </tr>
           <tr>
-            <td>Peacock TV</td> 
+            <td onclick="codeBlockName(this.innerText)">Peacock TV</td> 
             <td></td> 
             <td></td> 
             <td></td> 
@@ -128,7 +131,7 @@
             <td></td> 
           </tr>
           <tr>
-            <td>Paramount+</td> 
+            <td onclick="codeBlockName(this.innerText)">Paramount+</td> 
             <td></td> 
             <td></td> 
             <td></td> 
@@ -136,9 +139,9 @@
             <td></td> 
           </tr>
           <tr>
-            <td>iTunes</td> 
-            <td>EVO</td> 
-            <td>Atmos</td> 
+            <td onclick="codeBlockName(this.innerText)">iTunes</td> 
+            <td onclick="codeBlockName(this.innerText)">EVO</td> 
+            <td onclick="codeBlockName(this.innerText)">Atmos</td> 
             <td></td> 
             <td></td> 
             <td></td> 
@@ -165,6 +168,9 @@
         <div class="info-div upgrade-until">
           <h2>Upgrade Until: </h2> 
             <p>500</p>
+        </div>
+        <div class="info-div cf-block">
+          <h2 id="cf-block-name">Default</h2> 
         </div>
       </div>
 
