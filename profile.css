@@ -19,7 +19,6 @@ div {
 
   border: solid #4c566a;
   border-radius: 20px;
-  overflow:unset;
 }
 
 .profile-name {
@@ -34,13 +33,30 @@ div {
   display: flex;
   background-color: #2e3440;
   border: 0;
-
+  margin: auto;
 }
 
 #content-info {
   background-color: #2e3440;
   border: 0;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
 }
+
+.cf-block {
+  display: block;
+  margin: 20px;
+  margin-right: 0;
+  text-align: left;
+}
+
+.cf-block h2 {
+  margin: 20px;
+  color: #5e81ac;
+}
+
+
 
 table {
   padding: 10px;
@@ -79,8 +95,23 @@ th, td {
   margin: 20px;
   margin-top: 0;
   margin-right: 0;
+}
+
+.info-div.goal {
   width: auto;
-  
+  height: 110px;
+}
+
+.info-div.upgrade-until {
+  width: auto;
+  height: 80px;
+}
+
+.info-div.cf-block{
+  display: block;
+  width: auto;
+  flex-grow: 1;
+  margin-bottom: 0;
 }
 
 .info-div h2 {
@@ -92,11 +123,21 @@ th, td {
   text-align: left;
 }
 
+.info-div pre {
+  white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
+  white-space: -pre-wrap; /* Opera */
+  white-space: -o-pre-wrap; /* Opera */
+  white-space: pre-wrap; /* CSS3 - Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+  word-wrap: break-word; /* IE 5.5+ */
+  
+  overflow: scroll;
+  margin: 20px;
+
+  height: 475px;
+  text-align: left;
+}
+
 .upgrade-until p {
   font-size: 20pt;
   margin-top: 23px;
-}
-
-td {
-  onclicl
 }
